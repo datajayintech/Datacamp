@@ -22,17 +22,18 @@ This will omit the three entries per country_code that you aren't interested in.
 ![image](https://user-images.githubusercontent.com/71678091/178052291-049bd529-43bf-47ef-8ddc-f5395dec1880.png)
 
 
-**SELECT** p1.country_code,p1.size AS size2010, p2. size AS size2015
+      **SELECT** p1.country_code,p1.size AS size2010, p2. size AS size2015
 		
 		((p2.size - p1.size)/p1.size * 100.0) AS growth_perc 
 		
-**FROM** populations AS p1 <br>
- **INNER JOIN** pipulations AS p2 <br>
+    **FROM** populations AS p1 <br>
+    **INNER JOIN** pipulations AS p2 <br>
 	  **ON** p1.country_code = p2.country_code <br>
 		    **AND** p1.year = p2.year - 5; <br>
 				
-	**RESULTS** 
-	![image](https://user-images.githubusercontent.com/71678091/178055949-74af54a8-ce2e-450d-a472-30b503ea5788.png)
+**RESULTS** 
+	
+![image](https://user-images.githubusercontent.com/71678091/178055949-74af54a8-ce2e-450d-a472-30b503ea5788.png)
 
 	
 				
