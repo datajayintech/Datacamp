@@ -1,6 +1,7 @@
-    --- In terms of life expectancy for 2010, determine the names of the lowest five countries and their regions
+    # In terms of life expectancy for 2010, determine the names of the lowest five countries and their regions 
     
-    --- Left Join
+  ---- 
+         
          SELECT c.name AS country, region, life_expectancy AS Life_exp
          FROM  countries AS C 
             LEFT JOIN populations AS p
